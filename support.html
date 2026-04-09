@@ -1,196 +1,216 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="dark light" />
-  <meta name="description" content="Support page for Ice Fishing Master by Medi-Kam." />
-  <title>Support • Ice Fishing Master</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08111f">
+  <meta name="description" content="Ice Fishing Master official developer pages by Medi-Kam.">
+  <title>Ice Fishing Master — Support</title>
   <style>
-    :root{
-      --bg:#070a12;
-      --bg2:#0c1230;
-      --card: rgba(255,255,255,.05);
-      --stroke: rgba(255,255,255,.12);
-      --text: rgba(255,255,255,.92);
-      --muted: rgba(255,255,255,.72);
-      --muted2: rgba(255,255,255,.56);
-      --ice:#6ad7ff;
-      --vio:#9a7dff;
-      --good:#66f2c2;
-      --shadow: 0 16px 50px rgba(0,0,0,.5);
-      --r: 22px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0; min-height:100vh;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      color:var(--text);
-      background:
-        radial-gradient(820px 520px at 18% 8%, rgba(106,215,255,.18), transparent 60%),
-        radial-gradient(860px 520px at 78% 10%, rgba(154,125,255,.16), transparent 60%),
-        linear-gradient(180deg, var(--bg), var(--bg2));
-    }
-    .wrap{ max-width: 980px; margin:0 auto; padding: 24px 16px 54px; }
-    .top{
-      border:1px solid var(--stroke);
-      border-radius: var(--r);
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-      box-shadow: var(--shadow);
-      padding: 18px;
-      overflow:hidden;
-      position:relative;
-    }
-    .glow{
-      position:absolute; inset:-80px -80px auto -80px; height:220px;
-      background: conic-gradient(from 150deg, rgba(106,215,255,.0), rgba(106,215,255,.18), rgba(154,125,255,.0));
-      filter: blur(22px);
-      opacity:.75;
-      pointer-events:none;
-    }
-    .row{ display:flex; gap:14px; align-items:flex-start; }
-    .badge{
-      width: 44px; height:44px; border-radius:14px;
-      border:1px solid rgba(255,255,255,.16);
-      background:
-        radial-gradient(16px 16px at 30% 30%, rgba(255,255,255,.75), rgba(255,255,255,0) 70%),
-        linear-gradient(135deg, rgba(106,215,255,.25), rgba(154,125,255,.18));
-      box-shadow: 0 12px 28px rgba(0,0,0,.35);
-      flex: 0 0 auto;
-    }
-    h1{ margin:0; font-size: clamp(20px, 4.2vw, 34px); }
-    .sub{ margin:6px 0 0; color:var(--muted); font-size:14px; line-height:1.45; }
-
-    .grid{
-      margin-top: 16px;
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-    }
-    @media (max-width: 860px){
-      .grid{ grid-template-columns: 1fr; }
-    }
-    .card{
-      border:1px solid var(--stroke);
-      border-radius: var(--r);
-      background: var(--card);
-      box-shadow: 0 12px 30px rgba(0,0,0,.38);
-      padding: 16px;
-    }
-    h2{ margin:0 0 10px; font-size:16px; }
-    p{ margin:0; color:var(--muted); font-size:14px; line-height:1.7; }
-    .list{ margin:10px 0 0 18px; color:var(--muted); font-size:14px; line-height:1.7; }
-
-    .cta{
-      margin-top: 12px;
-      display:flex; flex-wrap:wrap; gap:10px;
-    }
-    a.btn{
-      display:inline-flex; align-items:center; gap:10px;
-      text-decoration:none;
-      padding: 12px 14px;
-      border-radius: 14px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.06);
-      color: var(--text);
-      font-weight: 650;
-      font-size:14px;
-      transition: transform .08s ease, filter .15s ease;
-    }
-    a.btn:active{ transform: translateY(1px) scale(.99); }
-    a.primary{
-      border:0;
-      color:#071018;
-      background: linear-gradient(135deg, var(--ice), var(--good));
-      box-shadow: 0 14px 30px rgba(106,215,255,.18);
-    }
-    .meta{
-      margin-top: 14px;
-      color: var(--muted2);
-      font-size:12px;
-      line-height:1.6;
-    }
-    footer{ margin-top: 18px; text-align:center; color:var(--muted2); font-size:12px; }
-    code{ color:#fff; background: rgba(255,255,255,.08); padding:2px 6px; border-radius:8px; }
-  </style>
+:root{
+  --bg:#08111f;
+  --bg2:#0e1a2f;
+  --card:rgba(255,255,255,0.08);
+  --line:rgba(255,255,255,0.14);
+  --text:#eef6ff;
+  --muted:#b5c7dd;
+  --accent:#7de3ff;
+  --accent2:#95ffa4;
+  --glow:0 0 30px rgba(125,227,255,.18);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 20% 0%, rgba(125,227,255,.14), transparent 30%),
+    radial-gradient(circle at 80% 10%, rgba(149,255,164,.10), transparent 28%),
+    linear-gradient(180deg,var(--bg),#07101b 45%, #050b14 100%);
+  min-height:100vh;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.shell{width:min(1100px,calc(100% - 28px));margin:0 auto}
+.topbar{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter: blur(12px);
+  background:rgba(4,10,18,.58);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:18px;padding:14px 0;
+}
+.brand{
+  display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.02em
+}
+.logo{
+  width:42px;height:42px;border-radius:14px;
+  background:linear-gradient(135deg,#92f0ff,#5eb8ff 45%,#b6ffe8);
+  box-shadow:0 10px 30px rgba(94,184,255,.35), inset 0 1px 0 rgba(255,255,255,.35);
+  position:relative;overflow:hidden;
+}
+.logo:before{
+  content:"";position:absolute;inset:8px;border-radius:10px;
+  background:linear-gradient(180deg,rgba(255,255,255,.85),rgba(255,255,255,.18));
+  clip-path:polygon(48% 0,100% 30%,72% 100%,17% 74%,0 28%);
+}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.links a{
+  padding:10px 14px;border:1px solid var(--line);border-radius:999px;
+  color:var(--text);background:rgba(255,255,255,.04)
+}
+.hero{padding:36px 0 18px}
+.hero-grid{
+  display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:stretch
+}
+.panel{
+  border:1px solid var(--line);
+  background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.04));
+  border-radius:28px;
+  box-shadow:var(--glow);
+}
+.main-card{padding:28px}
+.kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 12px;border-radius:999px;
+  border:1px solid rgba(125,227,255,.25);
+  background:rgba(125,227,255,.08);color:#dffaff;font-size:.92rem
+}
+h1{
+  font-size:clamp(2rem,7vw,4.2rem);line-height:.96;margin:16px 0 14px;
+  letter-spacing:-.04em
+}
+.subtitle{font-size:1.06rem;line-height:1.7;color:var(--muted);max-width:60ch}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:13px 18px;border-radius:16px;border:1px solid var(--line);
+  background:rgba(255,255,255,.06);color:var(--text);font-weight:700
+}
+.btn.primary{
+  background:linear-gradient(135deg,rgba(125,227,255,.22),rgba(149,255,164,.18));
+}
+.stats{padding:22px;display:grid;gap:14px}
+.stat{
+  padding:16px;border-radius:20px;background:rgba(255,255,255,.05);border:1px solid var(--line)
+}
+.stat strong{display:block;font-size:1.35rem;margin-bottom:5px}
+.section{padding:18px 0 48px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{padding:22px}
+.card h3{margin:0 0 10px;font-size:1.08rem}
+.card p,.card li{color:var(--muted);line-height:1.7}
+.card ul{padding-left:18px;margin:10px 0 0}
+.badge{
+  display:inline-block;padding:7px 10px;border-radius:999px;
+  border:1px solid var(--line);background:rgba(255,255,255,.05);font-size:.9rem
+}
+.footer{
+  padding:22px 0 40px;color:var(--muted);font-size:.95rem
+}
+.footer-box{
+  display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
+  padding:18px 20px;border:1px solid var(--line);border-radius:22px;
+  background:rgba(255,255,255,.04)
+}
+.wave{
+  position:relative;overflow:hidden;
+}
+.wave:after{
+  content:"";position:absolute;right:-80px;top:-80px;width:220px;height:220px;border-radius:50%;
+  background:radial-gradient(circle, rgba(125,227,255,.26), transparent 68%);
+  pointer-events:none;
+}
+.small{font-size:.95rem}
+.highlight{color:#f0fdff}
+.notice{
+  margin-top:14px;padding:14px 16px;border-radius:18px;
+  border:1px solid rgba(149,255,164,.22);background:rgba(149,255,164,.08)
+}
+@media (max-width:860px){
+  .hero-grid,.grid-3{grid-template-columns:1fr}
+  .nav{align-items:flex-start;flex-direction:column}
+  .links{width:100%}
+}
+</style>
 </head>
-
 <body>
-  <div class="wrap">
-    <section class="top">
-      <div class="glow" aria-hidden="true"></div>
-      <div class="row">
-        <div class="badge" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="shell nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
         <div>
-          <h1>Support</h1>
-          <div class="sub">
-            App: <strong>Ice Fishing Master</strong> • Developer: <strong>Medi-Kam</strong><br/>
-            Email: <a href="mailto:lerimecesep214@gmail.com" style="color:rgba(255,255,255,.88)">lerimecesep214@gmail.com</a>
-          </div>
+          <div>Ice Fishing Master</div>
+          <div class="small" style="color:var(--muted)">by Medi-Kam</div>
         </div>
       </div>
-    </section>
-
-    <section class="grid">
-      <div class="card">
-        <h2>How to contact support</h2>
-        <p>
-          If you need help, please email me and include:
-        </p>
-        <ul class="list">
-          <li>Device model and Android version</li>
-          <li>App version</li>
-          <li>What you expected to happen vs what happened</li>
-          <li>Screenshots (if possible)</li>
-        </ul>
-
-        <div class="cta">
-          <a class="btn primary" href="mailto:lerimecesep214@gmail.com?subject=Ice%20Fishing%20Master%20-%20Support&body=Hi%20Medi-Kam,%0A%0AI%20need%20help%20with%20Ice%20Fishing%20Master.%0A%0ADevice:%20%0AAndroid%20version:%20%0AApp%20version:%20%0AIssue:%20%0AExpected:%20%0AActual:%20%0A%0AThanks!">
-            ✉️ Email Support
-          </a>
-          <a class="btn" href="privacy.html">Privacy Policy</a>
-          <a class="btn" href="marketing.html">About & Roadmap</a>
-        </div>
-
-        <div class="meta">
-          Tip: If you open these pages inside an in-app WebView, you can also intercept navigation to <code>mailto:</code>
-          and open the email client natively.
-        </div>
+      <nav class="links"><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="support.html" aria-current="page">Support</a><a href="marketing.html">Marketing</a></nav>
+    </div>
+  </header>
+  
+<main class="shell">
+  <section class="hero">
+    <div class="panel main-card wave">
+      <span class="kicker">Support URL</span>
+      <h1>Support and contact information.</h1>
+      <p class="subtitle">
+        This page helps users and reviewers quickly understand how to contact the developer regarding
+        Ice Fishing Master.
+      </p>
+      <div class="cta-row">
+        <a class="btn primary" href="mailto:lerimecesep214@gmail.com">Email Support</a>
+        <a class="btn" href="privacy.html">Privacy Policy</a>
       </div>
+    </div>
+  </section>
 
-      <div class="card">
-        <h2>Transparency</h2>
-        <p>
-          I keep support simple and direct. I don’t use tracking systems or third-party support widgets here.
-          Your message is sent only to my email inbox.
-        </p>
+  <section class="section">
+    <div class="grid-3">
+      <article class="panel card">
+        <h3>Developer name</h3>
+        <p>Medi-Kam</p>
+      </article>
+      <article class="panel card">
+        <h3>Support email</h3>
+        <p><a href="mailto:lerimecesep214@gmail.com">lerimecesep214@gmail.com</a></p>
+      </article>
+      <article class="panel card">
+        <h3>Application</h3>
+        <p>Ice Fishing Master</p>
+      </article>
+    </div>
+  </section>
 
-        <h2 style="margin-top:14px;">Developer details</h2>
-        <ul class="list">
-          <li><strong>Developer:</strong> Medi-Kam</li>
-          <li><strong>App:</strong> Ice Fishing Master</li>
-          <li><strong>Support email:</strong> lerimecesep214@gmail.com</li>
-        </ul>
-
-        <div class="meta">
-          Last updated: <span id="updated"></span>
-        </div>
+  <section class="section">
+    <div class="panel card">
+      <h3>How support works</h3>
+      <p>
+        If you have questions, technical issues, feedback, or store-related concerns about Ice Fishing Master,
+        please contact the developer by email. Messages are reviewed manually.
+      </p>
+      <ul>
+        <li>Bug reports and technical issues</li>
+        <li>General app questions</li>
+        <li>Store listing concerns</li>
+        <li>Privacy-related requests</li>
+        <li>Suggestions for future improvements</li>
+      </ul>
+      <div class="notice small">
+        When contacting support, it may help to include your device model, Android version, and a short description
+        of the issue you experienced.
       </div>
-    </section>
+    </div>
+  </section>
+</main>
 
-    <footer>
-      © <span id="year"></span> Medi-Kam • Ice Fishing Master
-    </footer>
-  </div>
-
-  <script>
-    (function(){
-      const d = new Date();
-      document.getElementById("year").textContent = String(d.getFullYear());
-      const fmt = new Intl.DateTimeFormat("en-US", { year:"numeric", month:"long", day:"2-digit" });
-      document.getElementById("updated").textContent = fmt.format(d);
-    })();
-  </script>
+  <footer class="footer">
+    <div class="shell footer-box">
+      <div>Developer: <span class="highlight">Medi-Kam</span></div>
+      <div>Contact: <a href="mailto:lerimecesep214@gmail.com">lerimecesep214@gmail.com</a></div>
+    </div>
+  </footer>
 </body>
 </html>
